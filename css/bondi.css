@@ -1,0 +1,98 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --yellow-color: #ffc400;
+  --section-color: #cce8f3;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  margin-bottom: 70px;
+}
+
+.title::after {
+  content: "";
+  height: 2px;
+  width: 120px;
+  background: var(--green-color);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* --------------- navbar ----------------- */
+.navbar {
+  background-color: var(--dark-color);
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--green-color);
+}
+
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+  cursor: pointer;
+}
+
+.navbar h3 {
+  color: #fff;
+}
+
+.navbar .search svg {
+  color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+  color: #fff;
+  font-size: 25px;
+  border-color: #fff;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+}
+
+/* --------------- landing ----------------- */
+.landing {
+  height: 100vh;
+  background: var(--dark-color);
+  color: #fff;
+}
+
+/* --------------- features ----------------- */
+.features .icon-holder {
+  height: 200px;
+}
+
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.features .icon-holder svg.number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+
+.features .icon-holder svg.icon {
+  color: var(--green-color);
+}
+
+.features h4 {
+  color: var(--yellow-color);
+}
+
+/* --------------- our work ----------------- */
