@@ -3,6 +3,7 @@
   --green-color: #33d1cc;
   --yellow-color: #ffc400;
   --section-color: #cce8f3;
+  --blue-color: #0d6efd;
 }
 
 body {
@@ -96,3 +97,83 @@ body {
 }
 
 /* --------------- our work ----------------- */
+.work {
+  background: var(--section-color);
+}
+
+.work .filter {
+  text-transform: capitalize;
+}
+
+.work .filter li {
+  cursor: pointer;
+}
+
+.work .filter li:hover {
+  background: var(--blue-color);
+}
+
+.work .item {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.work .item::before {
+  content: "Application";
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background: rgba(51, 209, 204, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.work .item:hover::before {
+  transform: translate(0);
+}
+
+/* --------------- about ----------------- */
+.about .team {
+  background: var(--section-color);
+}
+
+.team h2 {
+  color: var(--yellow-color);
+}
+
+.team .member .name {
+  background: var(--green-color);
+}
+
+.team .member blockquote {
+  background: #fff;
+}
+
+/* --------------- start project ----------------- */
+.project-start {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.project-start button {
+  border: 0;
+  color: #fff;
+}
+
+/* --------------- blog ----------------- */
+.blog .blog-post {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog .blog-post:hover {
+  transform: scale(1.1);
+}
