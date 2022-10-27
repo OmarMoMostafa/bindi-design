@@ -177,3 +177,37 @@ body {
 .blog .blog-post:hover {
   transform: scale(1.1);
 }
+
+/* --------------- subscribe ----------------- */
+.subscribe {
+  background: var(--yellow-color);
+  color: var(--dark-color);
+}
+
+.subscribe input {
+  background: none;
+  border: 0;
+  border-bottom: 2px solid #fff;
+}
+
+.subscribe button {
+  background: var(--dark-color);
+  color: var(--yellow-color);
+}
+
+.subscribe button:hover {
+  color: #fff;
+}
+
+/* --------------- subscribe ----------------- */
+footer {
+  background: var(--dark-color);
+}
+
+footer ul a {
+  color: var(--yellow-color);
+}
+
+footer ul a:hover {
+  color: #fff;
+}
